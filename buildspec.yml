@@ -24,8 +24,9 @@ phases:
   build:
     commands:
       - echo "Building the Docker image"
-      - docker build -t flask-app:latest .
+      - docker build -t kartik-repo .
       - echo "Docker image built  successfully"
+      - docker tag kartik-repo:latest 361769586062.dkr.ecr.us-east-1.amazonaws.com/kartik-repo:latest
 
   post_build:
     commands:
