@@ -31,7 +31,7 @@ phases:
   post_build:
     commands:
       - echo "Tagging the Docker image"
-      - docker tag flask-app:latest 491085395524.dkr.ecr.us-east-1.amazonaws.com/kartikeya1112/amma:second
+      - docker tag kartik-repo:latest 361769586062.dkr.ecr.us-east-1.amazonaws.com/kartik-repo:latest
       - echo "Pushing the Docker image to ECR"
       - docker push 361769586062.dkr.ecr.us-east-1.amazonaws.com/kartik-repo:latest
       - echo "Docker image pushed successfully great ahead deployment "
